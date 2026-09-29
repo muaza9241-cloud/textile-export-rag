@@ -5,10 +5,10 @@ import requests
 st.set_page_config(page_title="Textile Export RAG", layout="wide")
 
 st.title("🧵 Textile Export RAG System")
-st.write("Search textile export data, queries, and document embeddings:")
+st.write("Search textile export data, queries, and document embeddings:"
+         [https://textile-export-rag.onrender.com/query](https://textile-export-rag.onrender.com/query)
+         
 
-# Render API URL (apna Render URL yahan update karein)
-BACKEND_URL = "https://your-render-backend-url.onrender.com/query"
 
 # Search Input Box
 query = st.text_input("Enter your query:", placeholder="e.g., What are the top cotton export regulations?")
