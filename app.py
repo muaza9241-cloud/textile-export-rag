@@ -5,10 +5,10 @@ import requests
 st.set_page_config(page_title="Textile Export RAG", layout="wide")
 
 st.title("🧵 Textile Export RAG System")
-st.write("Search textile export data, queries, and document embeddings:"
-         [https://textile-export-rag.onrender.com/query](https://textile-export-rag.onrender.com/query)
-         
+st.write("Search textile export data, queries, and document embeddings:")
 
+# Render API URL
+BACKEND_URL = "https://textile-export-rag.onrender.com/query"
 
 # Search Input Box
 query = st.text_input("Enter your query:", placeholder="e.g., What are the top cotton export regulations?")
@@ -22,8 +22,6 @@ if query:
             if response.status_code == 200:
                 result = response.json()
                 st.success("Results Retrieved!")
-                
-                # Display Results
                 st.subheader("Answer / Context:")
                 st.write(result.get("answer", result))
             else:
