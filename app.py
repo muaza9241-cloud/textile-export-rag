@@ -8,7 +8,7 @@ st.title("🧵 Textile Export RAG System")
 st.write("Search textile export data, queries, and document embeddings:")
 
 # Render API URL
-BACKEND_URL = "https://textile-export-rag.onrender.com/query"
+BACKEND_URL = "https://textile-export-rag.onrender.com/search"
 
 # Search Input Box
 query = st.text_input("Enter your query:", placeholder="e.g., What are the top cotton export regulations?")
