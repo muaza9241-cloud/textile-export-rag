@@ -6,3 +6,4 @@ rank_bm25
 pydantic
 python-dotenv
 pyarrow<25
+requests
