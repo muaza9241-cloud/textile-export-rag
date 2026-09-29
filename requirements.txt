@@ -7,6 +7,4 @@ pydantic
 python-dotenv
 pyarrow<25
 requests
-langchain
-langchain-community
-langchain-openai
+
