@@ -5,3 +5,4 @@ chromadb
 rank_bm25
 pydantic
 python-dotenv
+pyarrow==14.0.2
